@@ -1,5 +1,5 @@
 $(document).ready(()=>{
-    const words = ['stranger', 'flower', 'grapes', 'donuts', 'wheel', 'chicken', 'turkey', 'america', 'homeland']
+    const words = ['stranger', 'flower', 'grapes', 'donuts', 'wheel', 'chicken', 'turkey', 'america', 'danger']
     const randomWord = ()=> words[Math.floor(Math.random()*words.length)].split('')
     const refreshImage = n=> $('#hang').replaceWith(`<img id="hang" src="./images/hangman-0${n}.png" />`)
     let winner = new Audio("audio/cheering.mp3"); loser = new Audio("audio/death1.wav");
