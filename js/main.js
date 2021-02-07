@@ -1,5 +1,9 @@
 $(document).ready(()=>{
+<<<<<<< HEAD
     const words = ['stranger', 'flower', 'grapes', 'donuts', 'wheel', 'chicken', 'turkey', 'america', 'homeland', 'butterfly', 'television', 'codecore', 'programming', 'hacker', 'kitchen', 'dragon']
+=======
+    const words = ['stranger', 'flower', 'grapes', 'donuts', 'wheel', 'chicken', 'turkey', 'america', 'danger']
+>>>>>>> 04033deae2585c367b0ff398a625d1d47fd8a79c
     const randomWord = ()=> words[Math.floor(Math.random()*words.length)].split('')
     const refreshImage = n=> $('#hang').replaceWith(`<img id="hang" src="./images/hangman-0${n}.png" />`)
     let winner = new Audio("audio/cheering.mp3"); 
