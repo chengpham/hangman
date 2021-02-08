@@ -1,7 +1,7 @@
 $(document).ready(()=>{
     const words = ['stranger', 'flower', 'grapes', 'donuts', 'wheel', 'chicken', 'turkey', 'america', 'homeland', 'butterfly', 'television', 'codecore', 'programming', 'hacker', 'kitchen', 'dragon']
     const randomWord = ()=> words[Math.floor(Math.random()*words.length)].split('')
-    const refreshImage = n=> $('#hang').replaceWith(`<img id="hang" src="./images/hangman-0${n}.png" />`)
+    const refreshImage = n=> $("#hang").attr("src",`./images/hangman-0${n}.png`);
     let winner = new Audio("audio/cheering.mp3"); 
     const loser = ()=> new Audio(`audio/death${Math.ceil(Math.random() * 6)}.wav`);
     const keySound = ()=> new Audio(`audio/vintage-keyboard-${Math.ceil(Math.random() * 5)}.wav`)
